@@ -1,3 +1,35 @@
-.poppins{
-    font-family: 'Poppins', sans-serif;
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
+.h-landing {
+  height: calc(100vh - 64px);
+}
+.bg-hero-landing {
+  background-image: url(../image/Header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.roboto {
+  font-family: "Roboto Condensed", serif;
+}
+.bg-card-one {
+  background-image: url("https://s3-alpha-sig.figma.com/img/e4c7/276a/25a9cc6960c67cafa4666142463a3cc6?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FFlJhTzzFuDRJBkd~9Btq8wUlD3whU2FQVBkpJlYlxYBn~zy9D~fkftAi-~tAeNdF5TeL4zbpeF3qvRk54GhZpmYr0RblZIMNPTaZeGd8VAbgUbuInvKhQNevZMqqOyAIXVLBv833IlTRGgOVxdZdDPzzXRJV7sjFREvaIxObEr6ZvtTprhb2R9jqnmi9~-6A1J-4yOJFei2IGjqIxXjZJvakTOW1sNnyAaNrUC53R3vy7qJHXV-w1kU2fyaJfWlcuvp2tFoDQlL3~YfCnQ0Beh4GJCYBD4miBZ7fcOXc7uuRtWCHVi~0r0OjlDCTirVPPUk7NN8nyphTmzL8EmMnw__");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-card-two {
+  background-image: url("https://s3-alpha-sig.figma.com/img/9efe/4a4c/a2cd8b61986457572fa7c65fe425adc6?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BBTowlrWmgLhsJsRvYsccKKNVt8m--2ZzaLwmOBahd78RTV-JTCprh8naGRJj2a3ZxDT62tFiRyUnL5Btgj1nj1SAzNzbS3nQSVS3BDBWAdi6~Vflqs3PazihH~wPihoJkVsCno3ZskVexfC~XdNwgdxTjGEoNs9hv~PsUkGpAtl5r~Ad3b4j--2dM7B-IOacCVjE~XknWWwFBkNrECJQDSKEuTZajeKWz45~E9OmA~xhV3SZCW2P19MF8t~QPIhHr1yMTifCvh-PXzd279pz0-Qpj0AvJ3-7xisiPMIKTKTHDjs1P5f2OhitQhJdSt3sdDP6IY~pYEakPCvOzHxQw__");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-card-call {
+  background-image: url("https://s3-alpha-sig.figma.com/img/14ea/616c/948f8917d234e52c5a3e23b3c75723eb?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FM~Vi11Zz~M-nK6i-hUndsgudIE3CtGlvU3G04zZbWZRkTpLyxdZwYMmUFLEcrpDojZy55yEE7NYsqWKPsQ3cDvWtqiRGCFe35AecLgDLMcX3BxwVsrKG~cFTYDiKi5JKzmcdOXqCW8an6pxasNEXV09OR5~P2ZHPs3-q9iuSGCyIuvkJwouV5BfE5ttRglkv65p1vUa0pEgaaMrr9S5xzPMeYXb-MPI6hQMXFMCQ0eSBZeSwvoQPfas2K9bSmaCEyy2u3-884JKAHm5wmGifnpEhPkqvaf2ovgEQTO5-c05Vq-7264DC3V6CISTobicufW~wiDO35unT7S4gG8ozA__");
+  background-size: cover;
+  background-position: 40%;
+  background-repeat: no-repeat;
+}
+

@@ -11,24 +11,567 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
+    <!-- custome -->
     <style type="text/tailwindcss">
       @theme {
-
         /* color*/
-        --color-main : #49BBBD;
-        --color-orange: #F88C3D;
-        --color-pink : #D8587E;
-        --color-cyan : #23BDEE;
+        --color-primary: #49bbbd;
+        --color-orange: #f88c3d;
+        --color-pink: #d8587e;
+        --color-cyan: #23bdee;
+        --color-text: #5b5b5b;
+        --color-blue: #5b72ee;
+        --color-blue-cyan: #29b9e7;
+        --color-green-slate: #00cbb8;
         /* font */
         --font-poppins: "Poppins", serif;
-
       }
     </style>
   </head>
-  <body>
-    <h1 class="" >ddd</h1>
-    <h1 class="font-poppins" >ddd</h1>
+
+  <body class="font-poppins">
+    <nav
+      class="flex h-16 justify-between items-center py-3 bg-primary px-20 sticky top-0 z-50"
+    >
+      <img src="../svg/logo.svg" alt="logo" height="70px" width="70px" />
+      <article class="flex justify-between items-center gap-x-10">
+        <ul class="flex justify-center items-center gap-x-8">
+          <li class="text-md text-white"><a href="#">Home</a></li>
+          <li class="text-md text-white"><a href="#">Course</a></li>
+          <li class="text-md text-white"><a href="#">Careers</a></li>
+          <li class="text-md text-white"><a href="#">Blog</a></li>
+          <li class="text-md text-white"><a href="#">About Us</a></li>
+        </ul>
+        <ul class="flex justify-center items-center gap-x-5">
+          <li>
+            <button class="px-8 py-2 rounded-full bg-[#ffffff] text-text">
+              Login
+            </button>
+          </li>
+          <li>
+            <button class="px-8 py-2 rounded-full bg-[#ffffff73] text-white">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </article>
+    </nav>
+    <!-- hero section -->
+    <section
+      class="h-screen px-20 flex justify-between items-center bg-[url('../image/Header.jpg')] bg-no-repeat bg-cover bg-center overflow-hidden"
+    >
+      <article class="flex flex-col justify-start items-start gap-y-7">
+        <h2 class="text-[45px] leading-[81px] font-bold text-white">
+          <span class="text-orange">Studying</span> Online is now <br />
+          much easier
+        </h2>
+        <p class="text-lg font-light leading-[38.4px] text-white">
+          TOTC is an interesting platform that will teach you <br />
+          in more an interactive way
+        </p>
+
+        <!-- btn -->
+        <article class="flex justify-between items-center gap-x-10 text-lg">
+          <button
+            class="px-5 py-3 bg-[#ffffff73] rounded-full text-white font-medium"
+          >
+            Join for free
+          </button>
+          <button
+            class="bg-white flex justify-center items-center w-15 h-15 rounded-full"
+          >
+            <img src="../svg/play.svg" class="ml-1 h-5" alt="" />
+          </button>
+          <p>Watch how it works</p>
+        </article>
+      </article>
+      <article class="flex justify-center items-center w-1/2 relative">
+        <figure class="">
+          <img
+            src="../image/student.png"
+            class="w-[390px] object-contain"
+            alt=""
+          />
+          <!-- calendar -->
+          <article
+            class="flex justify-between items-center gap-x-5 p-2.5 rounded-md bg-[#ffffffad] shadow-sm absolute top-30 left-10"
+          >
+            <img
+              src="../svg/calenda.svg"
+              class="h-8 w-8 bg-primary p-1.5 rounded-md"
+              alt="icon calendar"
+            />
+            <div>
+              <h3 class="text-sm font-medium">250k</h3>
+              <p class="text-[10px] font-normal">Assisted Student</p>
+            </div>
+          </article>
+
+          <!-- message -->
+          <article
+            class="flex justify-between items-center gap-x-3 p-2.5 rounded-md bg-[#ffffffad] backdrop-blur-sm shadow-sm absolute bottom-50 right-10"
+          >
+            <img
+              src="../svg/email.svg"
+              class="h-8 w-8 bg-orange p-1.5 rounded-md"
+              alt="icon calendar"
+            />
+            <div>
+              <h3 class="text-sm font-medium">Congratulations</h3>
+              <p class="text-[10px] font-normal">Your admission completed</p>
+            </div>
+          </article>
+
+          <!-- card rate -->
+          <article
+            class="flex justify-between items-start gap-x-3 p-2.5 rounded-md bg-[#ffffffbb] backdrop-blur-sm shadow-sm absolute bottom-30 left-5"
+          >
+            <figure class="relative">
+              <img
+                src="../image/profile.jpg"
+                class="h-8 w-8 bg-orange rounded-full"
+                alt="icon calendar"
+              />
+              <div
+                class="rounded-full absolute bg-white p-0.5 -bottom-0 -right-0"
+              >
+                <div class="h-2 w-2 rounded-full bg-green-500"></div>
+              </div>
+            </figure>
+            <div>
+              <h3 class="text-sm font-medium">User Experience Class</h3>
+              <p class="text-[10px] font-normal">Today at 12.00 PM</p>
+              <button
+                class="px-3 py-1 rounded-full bg-pink text-white text-[12px] font-normal mt-2"
+              >
+                Join Now
+              </button>
+            </div>
+          </article>
+
+          <figure class="h-20 w-20 absolute top-22 right-25">
+            <img
+              src="../svg/graph.svg"
+              class="h-full w-full"
+              alt="icon graph"
+            />
+          </figure>
+        </figure>
+      </article>
+    </section>
+
+    <!-- landing section -->
+    <section
+      class="h-screen px-20 flex flex-col justify-evenly items-center gap-y-10 mt-30"
+    >
+      <!-- amount -->
+      <article class="flex justify-evenly items-center w-full roboto">
+        <article class="text-center">
+          <h3
+            class="text-[3rem] leading-10 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 text-transparent bg-clip-text"
+          >
+            15K+
+          </h3>
+          <p class="text-gray-800 poppins">Students</p>
+        </article>
+        <article class="text-center">
+          <h3
+            class="text-[3rem] leading-10 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 text-transparent bg-clip-text"
+          >
+            75%
+          </h3>
+          <p class="text-gray-800 poppins">Total success</p>
+        </article>
+        <article class="text-center">
+          <h3
+            class="text-[3rem] leading-10 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 text-transparent bg-clip-text"
+          >
+            35
+          </h3>
+          <p class="text-gray-800 poppins">Main questions</p>
+        </article>
+        <article class="text-center">
+          <h3
+            class="text-[3rem] leading-10 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 text-transparent bg-clip-text"
+          >
+            26
+          </h3>
+          <p class="text-gray-800 poppins">Chief experts</p>
+        </article>
+        <article class="text-center">
+          <h3
+            class="text-[3rem] leading-10 bg-gradient-to-r from-blue-500 via-teal-500 to-emerald-500 text-transparent bg-clip-text"
+          >
+            16
+          </h3>
+          <p class="text-gray-800 poppins">Years of experience</p>
+        </article>
+      </article>
+
+      <!-- title  -->
+      <article class="text-center">
+        <h4 class="text-2xl font-bold text-green-slate">
+          <span class="text-blue-950">All-In-One</span> Cloud Software.
+        </h4>
+        <p class="text-sm text-gray-500 font-normal leading-6 mt-2">
+          TOTC is one powerful online software suite that combines all the tools
+          <br />
+          needed to run a successful school or office.
+        </p>
+      </article>
+
+      <!-- card -->
+      <section class="flex justify-center items-center gap-x-10">
+        <article
+          class="p-7 text-center rounded-md w-[280px] h-[250px] bg-white shadow-md relative flex justify-end items-center flex-col gap-y-2"
+        >
+          <figure
+            class="h-14 w-14 p-4 bg-blue absolute left-[122px] -top-5 rounded-full shadow-md"
+          >
+            <img src="../svg/Vector.svg" class="w-full h-full" alt="" />
+          </figure>
+          <h5 class="text-blue-900 font-semibold">
+            Online Billing, <br />
+            Invoicing, & Contracts
+          </h5>
+          <p class="text-[12px] text-gray-500 leading-6">
+            Simple and secure control of your organization’s financial and legal
+            transactions. Send customized invoices and contracts
+          </p>
+        </article>
+        <article
+          class="p-7 text-center rounded-md w-[280px] h-[250px] bg-white shadow-md relative flex justify-end items-center flex-col gap-y-2"
+        >
+          <figure
+            class="h-14 w-14 p-4 bg-green-slate absolute left-[122px] -top-5 rounded-full shadow-md"
+          >
+            <img src="../svg/calenda.svg" class="w-full h-full" alt="" />
+          </figure>
+          <h5 class="text-blue-900 font-semibold">
+            Easy Scheduling & <br />
+            Attendance Tracking
+          </h5>
+          <p class="text-[12px] text-gray-500 leading-6">
+            Schedule and reserve classrooms at one campus or multiple campuses.
+            Keep detailed records of student attendance
+          </p>
+        </article>
+        <article
+          class="p-7 text-center rounded-md w-[280px] h-[250px] bg-white shadow-md relative flex justify-end items-center flex-col gap-y-2"
+        >
+          <figure
+            class="h-14 w-14 p-4 bg-blue-cyan absolute left-[122px] -top-5 rounded-full shadow-md"
+          >
+            <img src="../svg/users 1.svg" class="w-full h-full" alt="" />
+          </figure>
+          <h5 class="text-blue-900 font-semibold">
+            Online Billing, <br />
+            Invoicing, & Contracts
+          </h5>
+          <p class="text-[12px] text-gray-500 leading-6">
+            Automate and track emails to individuals or groups. Skilline’s
+            built-in system helps organize <br />
+            your organization
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- landing section 2 -->
+    <section class="p-20 flex flex-col justify-center items-center gap-y-12">
+      <!-- title  -->
+      <article class="text-center">
+        <h4 class="text-2xl font-bold text-green-slate">
+          <span class="text-blue-950">What is</span> TOTC?
+        </h4>
+        <p class="text-sm text-gray-500 font-normal leading-6 mt-2">
+          TOTC is a platform that allows educators to create online classes
+          whereby they can <br />
+          store the course materials online; manage assignments, quizzes and
+          exams; monitor <br />due dates; grade results and provide students
+          with feedback all in one place.
+        </p>
+      </article>
+
+      <!-- card -->
+      <section class="flex justify-center items-center gap-x-10">
+        <article
+          class="w-[350px] h-[250px] rounded-md flex justify-center items-center flex-col gap-y-3 bg-card-one"
+        >
+          <h5 class="text-xl font-semibold text-white">FOR INSTRUCTORS</h5>
+          <button
+            class="px-3 py-2 rounded-full border-white border text-white bg-transparent font-normal text-sm"
+          >
+            Start a class today
+          </button>
+        </article>
+        <article
+          class="w-[350px] h-[250px] rounded-md flex justify-center items-center flex-col gap-y-3 bg-card-two"
+        >
+          <h5 class="text-xl font-semibold text-white">FOR STUDENTS</h5>
+          <button
+            class="px-3 py-2 rounded-full text-white bg-[#23BDEEE5] font-normal text-sm"
+          >
+            Enter access code
+          </button>
+        </article>
+      </section>
+    </section>
+
+    <!-- landing section 3 -->
+    <section class="p-20 flex flex-col justify-center items-center gap-y-12">
+      <!-- title  -->
+      <article class="text-center">
+        <h4 class="text-2xl font-bold text-green-slate">
+          <span class="text-blue-950">Our</span> Features
+        </h4>
+        <p class="text-sm text-gray-500 font-normal leading-6 mt-2">
+          This very extraordinary feature, can make learning activities more
+          efficient
+        </p>
+      </article>
+
+      <!-- card -->
+      <section
+        class="flex justify-center items-center gap-x-10 w-full px-5 hidden"
+      >
+        <figure
+          class="w-[48%] bg-[#f7f7f7d7] backdrop-blur-md relative flex justify-start items-center px-10 py-15 rounded-xl gap-x-8"
+        >
+          <!-- btn -->
+          <div
+            class="flex justify-start items-center gap-x-2 bg-gray-200 rounded-t-xl absolute top-0 w-full left-0 py-2 px-3"
+          >
+            <div class="h-2.5 w-2.5 rounded-full bg-red-400"></div>
+            <div class="h-2.5 w-2.5 rounded-full bg-yellow-400"></div>
+            <div class="h-2.5 w-2.5 rounded-full bg-green-400"></div>
+          </div>
+          <article class="flex justify-center items-center flex-col">
+            <figure
+              class="h-[180px] w-[180px] rounded-xl shadow-md overflow-hidden bg-card-call relative"
+            >
+              <div
+                class="text-[8px] text-white bg-[#ffffff49] backdrop-blur-md flex items-center justify-center gap-x-2 rounded-md absolute bottom-2 left-2 px-1 py-1"
+              >
+                <img
+                  src="../svg/internet.svg"
+                  class="h-2.5 w-2.5"
+                  alt="internet icon"
+                />
+                <span class="font-normal bg-blue-400 px-1.5 py-.5 rounded-md"
+                  >Instructor</span
+                >
+                <span>Eveny Howard</span>
+              </div>
+            </figure>
+            <div
+              class="flex justify-center items-center gap-x-2 mt-5 text-[11px]"
+            >
+              <button
+                class="px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-normal shadow-md shadow-blue-300/50"
+              >
+                Present
+              </button>
+              <button
+                class="px-5 flex items-center justify-center py-2 rounded-full bg-rose-500 text-white text-sm font-normal shadow-md border-5 border-rose-300 gap-x-2"
+              >
+                <img src="../svg/phone.svg" class="h-3 w-3" alt="phoneIcon" />
+                <span>Call</span>
+              </button>
+            </div>
+          </article>
+          <figcaption class="flex justify-center items-center flex-col gap-y-5">
+            <figure class="h-[110px] w-[110px] overflow-hidden relative">
+              <img
+                class="h-full w-full object-cover rounded-xl"
+                src="https://s3-alpha-sig.figma.com/img/ada9/8f21/b111783e76881ec5644408bdde7b0edd?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=O8JZaXHqiYGxG~N4TSZowhzsQPZ6a7SECxKDye8sWz9PHs4rSIjBn~hsgg~xJLkzeL-Q552wdJ6oyKDZ0p-AwMZLlUy~2KvnBgl66qVXEU7aDCf~Kq8TloTN9cWpjq1Z2CFqW1iBkP5BsQXIfzC5ppXo7U0m9D2N4PwHsPhCCdFfbAVcQliheBgOx1mGnwvX6p2HUYd0ClDog0wle8Uy7F7rkTFjeL-A1XnxMyLpxQloI3DFRtmwe25bW8V9MJo-KW32smoxnW~xtzXzaorxj6wHlYLIvQXnkprK79QkORc2fPYAwJ2-Rge18QpB~45oFO8nSiD8mx7ZhSu3~0sp3w__"
+                alt=""
+              />
+              <div
+                class="text-[8px] text-white bg-[#ffffff49] backdrop-blur-md flex items-center justify-center gap-x-2 rounded-md absolute bottom-2 left-2 px-1 py-1"
+              >
+                <img
+                  src="../svg/internet.svg"
+                  class="h-2.5 w-2.5"
+                  alt="internet icon"
+                />
+                <span>Tamara Clarke</span>
+              </div>
+            </figure>
+            <figure class="h-[110px] w-[110px] overflow-hidden relative">
+              <img
+                class="h-full w-full object-cover rounded-xl object-top"
+                src="https://s3-alpha-sig.figma.com/img/c975/507a/b8fc3e147dca2c0bccccbead1c14ebb6?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dAj9tLZL87uWsJghPkpwEY-Go92gq5s6ZJg95GtEcNIIzZZTtwQ3kwfzSVGkbllXHXM5HoeVc7PL2LcPRtYhApFatTPCGlaRyEML0SYIsWCAxWrNPZOEwRAh5HcRO0Avcx4JpKnP3UHxjBLJzE3cX4QlHhbE8BRCZnoDw3YIa3PGigupOviIdoK8-luTYbTmUF4tmCvbcRX4GgIOnwMMV1EXJeFjG0GeBsKEYhbairKg2Kh6u8TSHOTn~NKk10K7ubBktj~A2ag9cjkX7~lriFnaZLfVoECFoVPKdndw2sZtVu~XVX5w-qcFAHSxCVXwOysF0VRRCH4r5mkldxdbYw__"
+                alt=""
+              />
+              <div
+                class="text-[8px] text-white bg-[#ffffff49] backdrop-blur-md flex items-center justify-center gap-x-2 rounded-md absolute bottom-2 left-2 px-1 py-1"
+              >
+                <img
+                  src="../svg/internet.svg"
+                  class="h-2.5 w-2.5"
+                  alt="internet icon"
+                />
+                <span>Tamara Clarke</span>
+              </div>
+            </figure>
+          </figcaption>
+          <figcaption
+            class="flex justify-center items-center flex-col gap-y-5 absolute -right-8 top-10"
+          >
+            <figure class="h-[130px] w-[130px] overflow-hidden relative">
+              <img
+                class="h-full w-full object-cover rounded-xl"
+                src="https://s3-alpha-sig.figma.com/img/6a32/4de5/c94a9ba1a6d453c5348b067f8698108b?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=aIfrXbnrmq36szjBNQuUTn9JsKJ51cURJzkI6Cf6GUan7fQXFO5HgA3PvTrhdjkzLnz9pZzmzXmFEuXrI9W5gqUsDdwNwz7FYv~3ZxPvY5XysLqhzFn9rn2nmsjXKnA-p6tjT9hWjVJt5Ox3K9LX8UFVWk-~Db3hP0DQlzw5cuWI1hyGMaPQp~HwDaz4eZInEzhf2vfPyhEYFwTaGth1dykgbSXUuGMPIMQlscSHb3Bfqwy094L04TnOw3NiSulLqIcneSALxnLB51zNnTuuxySPe1kmt0YUbhsQQXMSf-qpUUsiwPWSFyu0Ev3~KBIhumh7DgPvJOVKUYPAjPea9A__"
+                alt=""
+              />
+              <div
+                class="text-[8px] shadow-md text-white bg-[#ffffff49] backdrop-blur-md flex items-center justify-center gap-x-2 rounded-md absolute bottom-2 left-2 px-1 py-1"
+              >
+                <img
+                  src="../svg/internet.svg"
+                  class="h-2.5 w-2.5"
+                  alt="internet icon"
+                />
+                <span>Adam Levin</span>
+              </div>
+            </figure>
+            <figure class="h-[150px] w-[150px] overflow-hidden relative">
+              <img
+                class="h-full w-full object-cover rounded-xl object-top"
+                src="https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=apOlCc3pJ9JuP2oVSENPvnV6lpdSguujtM8DZmXkslMdwRLX7dY3BkNdNzIoqN5wqloP2h49dRDOaU8ylLKK0pcQDSqvL11-CU1huT6Qz8VGHkkhbu0MQT2euTNpNlcFLSJ2ld11kdWAYYEbj1W5DiD02p1CTBYMgy5jR2-mTw59g7UC-w6jaK8Yz0egnDeRq2kruDbEvaLZQ6x69Rvoc0FxPpZvdxlEe7NniSxxRKat~NZ~pyOTwARjNdngTNBBOGwvzqijrKuLeIMqf1EcUzvKPfsCSgVNUuyvP~5Qbpab-FxfmtELai2M54tp~edWZwEbj05NKwmvMZwIRGgpkA__"
+                alt=""
+              />
+              <div
+                class="text-[8px] shadow-md text-white bg-[#ffffff49] backdrop-blur-md flex items-center justify-center gap-x-2 rounded-md absolute bottom-2 left-2 px-1 py-1"
+              >
+                <img
+                  src="../svg/internet.svg"
+                  class="h-2.5 w-2.5"
+                  alt="internet icon"
+                />
+                <span>Patricia Mendoza</span>
+              </div>
+            </figure>
+          </figcaption>
+          <div
+            class="absolute bg-[#ffffffc4] h-15 w-15 rounded-full flex justify-center items-center p-2 top-[46%] left-[47%]"
+          >
+            <span
+              class="flex justify-center items-center bg-white rounded-full w-full h-full"
+              ><img src="../svg/hand.svg" class="h-5 w-5 ml-1" alt=""
+            /></span>
+          </div>
+          <figure class="absolute -top-15 left-10 -z-10">
+            <img src="../svg/Ellipse.svg" class="w-[80%]" alt="circle" />
+          </figure>
+        </figure>
+        <article
+          class="h-[350px] bg-gray-300 backdrop-blur-md w-[40%]"
+        ></article>
+      </section>
+      <!-- card -->
+      <section class="flex justify-center items-center gap-x-10 w-full px-5">
+        <figure class="w-[60%] relative">
+          <img
+            src="../svg/componet.svg"
+            class="w-full h-full object-cover"
+            alt=""
+          />
+          <div
+            class="flex justify-center items-center gap-x-2 mt-5 text-[11px] absolute bottom-23 left-10"
+          >
+            <button
+              class="cursor-pointer px-5 py-2 rounded-full bg-blue-500 text-white text-sm font-normal shadow-md shadow-blue-300/50"
+            >
+              Present
+            </button>
+            <button
+              class="px-5 flex cursor-pointer items-center justify-center py-2 rounded-full bg-rose-500 text-white text-sm font-normal shadow-md border-5 border-rose-300 gap-x-2"
+            >
+              <img src="../svg/phone.svg" class="h-3 w-3" alt="phoneIcon" />
+              <span>Call</span>
+            </button>
+          </div>
+        </figure>
+        <section class="backdrop-blur-md w-[40%]">
+          <h4 class="font-semibold text-blue-950 text-2xl">
+            A <span class="text-green-slate">user interface</span> designed for
+            the classroom
+          </h4>
+          <article class="flex justify-start items-center gap-8 mt-5">
+            <figure
+              class="bg-white p-2 rounded-full shadow-md h-10 w-10 flex items-center justify-center"
+            >
+              <img src="../svg/cube.svg" class="h-4 w-4" alt="cubeIcon" />
+            </figure>
+            <p class="leading-6 text-sm text-gray-500">
+              Teachers don’t get lost in the grid view <br />
+              and have a dedicated Podium space.
+            </p>
+          </article>
+          <article class="flex justify-start items-center gap-8 mt-5">
+            <figure
+              class="bg-white p-2 rounded-full shadow-md h-10 w-10 flex items-center justify-center"
+            >
+              <img src="../svg/stack.svg" class="h-4 w-4" alt="cubeIcon" />
+            </figure>
+            <p class="leading-6 text-sm text-gray-500">
+              TA’s and presenters can be moved to <br />
+              the front of the class.
+            </p>
+          </article>
+          <article class="flex justify-start items-center gap-8 mt-5">
+            <figure
+              class="bg-white p-2 rounded-full shadow-md h-10 w-10 flex items-center justify-center"
+            >
+              <img src="../svg/userblue.svg" class="h-4 w-4" alt="cubeIcon" />
+            </figure>
+            <p class="leading-6 text-sm text-gray-500">
+              Teachers can easily see all students <br />
+              and class data at one time.
+            </p>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- landing section 4 -->
+    <section class="px-20 flex justify-between items-center">
+      <article class="w-1/2 px-15">
+        <h4 class="font-semibold text-blue-950 text-2xl">
+          <span class="text-green-slate">Tools</span> For Teachers <br />
+          And Learners
+        </h4>
+        <p class="text-justify mt-5 leading-6 text-sm text-gray-500">
+          Class has a dynamic set of teaching tools built to be deployed and
+          used during class. Teachers can handout assignments in real-time for
+          students to complete and submit.
+        </p>
+      </article>
+      <figure class="w-1/2 flex justify-end items-center">
+        <img src="../image/tools.png" class="h-4/5 w-4/5" alt="" />
+      </figure>
+    </section>
+    <section class="px-20 flex justify-between items-center flex-row-reverse">
+      <article class="w-1/2 px-15">
+        <h4 class="font-semibold text-blue-950 text-2xl">
+          Assessments, <br />
+          <span class="text-green-slate">Quizzes</span> , Tests
+        </h4>
+        <p class="mt-5 leading-6 text-sm text-gray-500 max-w-sm">
+          Easily launch live assignments, quizzes, and tests. Student results
+          are automatically entered in the online grade book.
+        </p>
+      </article>
+      <figure class="w-1/2 flex justify-end items-center">
+        <img src="../svg/tool_2.svg" class="h-4/5 w-4/5" alt="" />
+      </figure>
+    </section>
+
+    <section class="h-screen"></section>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
 </html>
