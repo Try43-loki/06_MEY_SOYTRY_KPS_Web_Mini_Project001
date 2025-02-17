@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!-- custome -->
+    <style type="text/tailwindcss">
+      @theme {
+        /* color*/
+        --color-primary: #49bbbd;
+        --color-orange: #f88c3d;
+        --color-pink: #d8587e;
+        --color-cyan: #23bdee;
+        --color-text: #5b5b5b;
+        --color-blue: #5b72ee;
+        --color-blue-cyan: #29b9e7;
+        --color-green-slate: #00cbb8;
+        /* font */
+        --font-poppins: "Poppins", serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-poppins">
+    <nav
+      class="flex h-16 justify-between items-center py-3 bg-primary px-20 sticky top-0 z-50"
+    >
+      <img src="../svg/logo.svg" alt="logo" height="70px" width="70px" />
+      <article class="flex justify-between items-center gap-x-10">
+        <ul class="flex justify-center items-center gap-x-8">
+          <li class="text-md text-white"><a href="#">Home</a></li>
+          <li class="text-md text-white"><a href="#">Course</a></li>
+          <li class="text-md text-white"><a href="#">Careers</a></li>
+          <li class="text-md text-white"><a href="#">Blog</a></li>
+          <li class="text-md text-white"><a href="#">About Us</a></li>
+        </ul>
+        <ul class="flex justify-center items-center gap-x-5">
+          <li>
+            <button class="px-8 py-2 rounded-full bg-[#ffffff] text-text">
+              Login
+            </button>
+          </li>
+          <li>
+            <button class="px-8 py-2 rounded-full bg-[#ffffff73] text-white">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </article>
+    </nav>
+
+    <!-- footer -->
+    <footer
+      class="bg-[#252641] flex justify-center items-center flex-col gap-y-12 py-10"
+    >
+      <!-- logo -->
+      <article class="flex justify-center items-center gap-x-8">
+        <img src="../svg/logo.svg" class="h-20 w-20" alt="" />
+        <span class="w-[1.5px] h-12 bg-gray-300 opacity-50 block"></span>
+        <p class="text-white text-md font-semibold">
+          Virtual Class <br />
+          for Zoom
+        </p>
+      </article>
+      <!-- mail -->
+      <article class="flex justify-center items-center flex-col gap-y-4">
+        <h5 class="text-xl font-normal text-slate-300">
+          Subscribe to get our Newsletter
+        </h5>
+        <form action="" class="flex justify-center items-center gap-x-2">
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="border border-gray-400 rounded-full outline-none bg-transparent text-white accent-slate-300 px-5 py-2"
+          />
+          <button
+            type="submit"
+            class="rounded-full bg-cyan px-5 text-white py-2 shadow-md shadow-blue-500/50"
+          >
+            Subscribe
+          </button>
+        </form>
+      </article>
+
+      <!-- link footer -->
+      <article class="flex justify-center items-center flex-col gap-y-4">
+        <ul
+          class="flex justify-center items-center gap-x-5 text-sm text-slate-300 font-light"
+        >
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li class="w-[.5px] h-5 opacity-50 bg-slate-300"></li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li class="w-[.5px] h-5 opacity-50 bg-slate-300"></li>
+          <li>
+            <a href="#">Terms & Conditions</a>
+          </li>
+        </ul>
+        <p class="text-sm text-slate-300 font-light">
+          © 2021 Class Technologies Inc.
+        </p>
+      </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
