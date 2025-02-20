@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | Page</title>
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/main.css" />
     <link
@@ -32,35 +34,100 @@
   </head>
 
   <body class="font-poppins">
-    <nav
-      class="flex h-16 justify-between items-center py-3 bg-primary px-20 sticky top-0 z-50"
-    >
-      <img src="../svg/logo.svg" alt="logo" height="70px" width="70px" />
-      <article class="flex justify-between items-center gap-x-10">
-        <ul class="flex justify-center items-center gap-x-8">
-          <li class="text-md text-white"><a href="index.html">Home</a></li>
-          <li class="text-md text-white"><a href="membership.html">Course</a></li>
-          <li class="text-md text-white"><a href="checkout.html">Careers</a></li>
-          <li class="text-md text-white"><a href="meeting.html">Blog</a></li>
-          <li class="text-md text-white"><a href="#">About Us</a></li>
-        </ul>
-        <ul class="flex justify-center items-center gap-x-5">
-          <li>
-            <button class="px-8 py-2 rounded-full bg-[#ffffff] text-text">
-              Login
-            </button>
-          </li>
-          <li>
-            <button class="px-8 py-2 rounded-full bg-[#ffffff73] text-white">
-              Sign Up
-            </button>
-          </li>
-        </ul>
-      </article>
+    <nav class="bg-primary border-gray-200 px-20 sticky top-0 z-50">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="../svg/logo.svg"
+            height="70px"
+            width="70px"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-primary md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 items-center"
+          >
+            <li class="w-full">
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-white sm:text-white md:text-black bg-gray-700 rounded-sm md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="membership.html"
+                class="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0"
+                >About</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="videoCall.html"
+                class="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0"
+                >Services</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="payment.html"
+                class="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0"
+                >Pricing</a
+              >
+            </li>
+            <li class="w-full">
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-100 rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0"
+                >Contact</a
+              >
+            </li>
+            <li class="flex items-center gap-x-7">
+              <button class="w-30 py-2 rounded-full bg-[#ffffff] text-text">
+                Login
+              </button>
+              <button class="w-30 py-2 rounded-full bg-[#ffffff73] text-white">
+                Sign Up
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- hero section -->
     <section
-      class="h-screen px-20 flex justify-between items-center bg-[url('../image/Header.jpg')] bg-no-repeat bg-cover bg-center overflow-hidden"
+      class="px-20 flex justify-between items-center bg-[url('../image/Header.jpg')] bg-no-repeat bg-cover bg-center overflow-hidden"
     >
       <article class="flex flex-col justify-start items-start gap-y-7">
         <h2 class="text-[45px] leading-[81px] font-bold text-white">
